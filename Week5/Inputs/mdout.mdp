@@ -1,8 +1,8 @@
 ;
 ;	File 'mdout.mdp' was generated
 ;	By user: hv454 (3053332)
-;	On host: log-2
-;	At date: Sat Oct 28 15:02:09 2023
+;	On host: log-3
+;	At date: Tue Oct 31 15:23:09 2023
 ;
 ;	Created by:
 ;	                     :-) GROMACS - gmx grompp, 2018.3 (-:
@@ -11,7 +11,7 @@
 ;	Data prefix:  /share/apps/gromacs/2018.3/openmpi/intel
 ;	Working dir:  /home/hv454/comp-lab-class-2023/Week5/Inputs
 ;	Command line:
-;	  gmx_mpi grompp -f adp_T300.mdp -c adp.gro -p adp.top -o md_adp.tpr
+;	  gmx_mpi grompp -f adp_T300.mdp -c adp.gro -p adp.top -o adp.tpr
 
 ; VARIOUS PREPROCESSING OPTIONS
 ; Preprocessor information: use cpp syntax.
