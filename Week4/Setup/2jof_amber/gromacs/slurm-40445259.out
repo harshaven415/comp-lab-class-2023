@@ -1,0 +1,44 @@
+Lmod has detected the following error: Your site prevents the automatic
+swapping of modules with same name. You must explicitly unload the loaded
+version of "gromacs/openmpi/intel/2023.3" before you can load the new one. Use
+swap to do this:
+
+   $ module swap gromacs/openmpi/intel/2023.3 gromacs/openmpi/intel/2020.4
+
+Alternatively, you can set the environment variable
+LMOD_DISABLE_SAME_NAME_AUTOSWAP to "no" to re-enable same name autoswapping.
+
+
+
+                      :-) GROMACS - gmx trjcat, 2023.3 (-:
+
+Executable:   /ext3/apps/gromacs/2023.3/openmpi/intel/bin/gmx_mpi
+Data prefix:  /ext3/apps/gromacs/2023.3/openmpi/intel
+Working dir:  /home/hv454/comp-lab-class-2023/Week4/Setup/2jof_amber/gromacs
+Command line:
+  gmx_mpi trjcat -f step4.1_equilibration.xtc step5_1.xtc step5_2.xtc step5_3.xtc step5_4 xtc. step5_5.xtc step5_6.xtc step5_7.xtc step5_8.xtc step5_9.xtc -o combined.xtc
+
+
+-------------------------------------------------------
+Program:     gmx trjcat, version 2023.3
+Source file: src/gromacs/commandline/cmdlineparser.cpp (line 271)
+Function:    void gmx::CommandLineParser::parse(int *, char **)
+
+Error in user input:
+Invalid command-line options
+  In command-line option -f
+    File 'xtc.' does not exist or is not accessible.
+    The following extensions were tried to complete the file name:
+      .xtc, .trr, .cpt, .gro, .g96, .pdb, .tng
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------

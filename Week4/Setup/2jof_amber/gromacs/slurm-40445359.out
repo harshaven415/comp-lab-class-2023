@@ -1,0 +1,166 @@
+Lmod has detected the following error: Your site prevents the automatic
+swapping of modules with same name. You must explicitly unload the loaded
+version of "gromacs/openmpi/intel/2023.3" before you can load the new one. Use
+swap to do this:
+
+   $ module swap gromacs/openmpi/intel/2023.3 gromacs/openmpi/intel/2020.4
+
+Alternatively, you can set the environment variable
+LMOD_DISABLE_SAME_NAME_AUTOSWAP to "no" to re-enable same name autoswapping.
+
+
+
+                      :-) GROMACS - gmx trjcat, 2023.3 (-:
+
+Executable:   /ext3/apps/gromacs/2023.3/openmpi/intel/bin/gmx_mpi
+Data prefix:  /ext3/apps/gromacs/2023.3/openmpi/intel
+Working dir:  /home/hv454/comp-lab-class-2023/Week4/Setup/2jof_amber/gromacs
+Command line:
+  gmx_mpi trjcat -f step5_1.tpr step5_2.tpr step5_3.tpr step5_4.tpr step5_5.tpr step5_6.tpr step5_7.tpr step5_8.tpr step5_9.tpr -o combined.tpr
+
+
+-------------------------------------------------------
+Program:     gmx trjcat, version 2023.3
+Source file: src/gromacs/commandline/cmdlineparser.cpp (line 271)
+Function:    void gmx::CommandLineParser::parse(int *, char **)
+
+Error in user input:
+Invalid command-line options
+  In command-line option -f
+    File name 'step5_1.tpr' cannot be used for this option.
+    Only the following extensions are possible:
+      .xtc, .trr, .cpt, .gro, .g96, .pdb, .tng
+  In command-line option -f
+    File name 'step5_2.tpr' cannot be used for this option.
+    Only the following extensions are possible:
+      .xtc, .trr, .cpt, .gro, .g96, .pdb, .tng
+  In command-line option -f
+    File name 'step5_3.tpr' cannot be used for this option.
+    Only the following extensions are possible:
+      .xtc, .trr, .cpt, .gro, .g96, .pdb, .tng
+  In command-line option -f
+    File name 'step5_4.tpr' cannot be used for this option.
+    Only the following extensions are possible:
+      .xtc, .trr, .cpt, .gro, .g96, .pdb, .tng
+  In command-line option -f
+    File name 'step5_5.tpr' cannot be used for this option.
+    Only the following extensions are possible:
+      .xtc, .trr, .cpt, .gro, .g96, .pdb, .tng
+  In command-line option -f
+    File name 'step5_6.tpr' cannot be used for this option.
+    Only the following extensions are possible:
+      .xtc, .trr, .cpt, .gro, .g96, .pdb, .tng
+  In command-line option -f
+    File name 'step5_7.tpr' cannot be used for this option.
+    Only the following extensions are possible:
+      .xtc, .trr, .cpt, .gro, .g96, .pdb, .tng
+  In command-line option -f
+    File name 'step5_8.tpr' cannot be used for this option.
+    Only the following extensions are possible:
+      .xtc, .trr, .cpt, .gro, .g96, .pdb, .tng
+  In command-line option -f
+    File name 'step5_9.tpr' cannot be used for this option.
+    Only the following extensions are possible:
+      .xtc, .trr, .cpt, .gro, .g96, .pdb, .tng
+  In command-line option -o
+    File name 'combined.tpr' cannot be used for this option.
+    Only the following extensions are possible:
+      .xtc, .trr, .gro, .g96, .pdb, .tng
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+                      :-) GROMACS - gmx trjcat, 2023.3 (-:
+
+Executable:   /ext3/apps/gromacs/2023.3/openmpi/intel/bin/gmx_mpi
+Data prefix:  /ext3/apps/gromacs/2023.3/openmpi/intel
+Working dir:  /home/hv454/comp-lab-class-2023/Week4/Setup/2jof_amber/gromacs
+Command line:
+  gmx_mpi trjcat -f step5_1.trr step5_2.trr step5_3.trr step5_4.trr step5_5.trr step5_6.trr step5_7.trr step5_8.trr step5_9.trr -o combined.trr
+
+trr version: GMX_trn_file (single precision)
+Reading frame       0 time    0.000   Reading frame       1 time  100.000   Reading frame       0 time    0.000   Reading frame       1 time  100.000   Reading frame       0 time    0.000   Reading frame       1 time  100.000   Reading frame       0 time    0.000   Reading frame       1 time  100.000   Reading frame       0 time    0.000   Reading frame       1 time  100.000   Reading frame       0 time    0.000   Reading frame       1 time  100.000   Reading frame       0 time    0.000   Reading frame       1 time  100.000   Reading frame       0 time    0.000   Reading frame       1 time  100.000   Reading frame       0 time    0.000   Reading frame       1 time  100.000   
+
+Summary of files and start times used:
+
+          File                Start time       Time step
+---------------------------------------------------------
+              step5_1.trr        0.000 ps      100.000 ps
+              step5_2.trr        0.000 ps      100.000 ps WARNING: same Start time as previous
+              step5_3.trr        0.000 ps      100.000 ps WARNING: same Start time as previous
+              step5_4.trr        0.000 ps      100.000 ps WARNING: same Start time as previous
+              step5_5.trr        0.000 ps      100.000 ps WARNING: same Start time as previous
+              step5_6.trr        0.000 ps      100.000 ps WARNING: same Start time as previous
+              step5_7.trr        0.000 ps      100.000 ps WARNING: same Start time as previous
+              step5_8.trr        0.000 ps      100.000 ps WARNING: same Start time as previous
+              step5_9.trr        0.000 ps      100.000 ps WARNING: same Start time as previous
+
+Reading frame       0 time    0.000   Reading frame       1 time  100.000   Reading frame       2 time  200.000   Reading frame       3 time  300.000   Reading frame       4 time  400.000   Reading frame       5 time  500.000   Reading frame       6 time  600.000   Reading frame       7 time  700.000   Reading frame       8 time  800.000   Reading frame       9 time  900.000   Reading frame      10 time 1000.000   Reading frame      11 time 1100.000   Reading frame      12 time 1200.000   Reading frame      13 time 1300.000   Reading frame      14 time 1400.000   Reading frame      15 time 1500.000   Reading frame      16 time 1600.000   Reading frame      17 time 1700.000   Reading frame      18 time 1800.000   Reading frame      19 time 1900.000   Reading frame      20 time 2000.000   Reading frame      30 time 3000.000   Reading frame      40 time 4000.000   Reading frame      50 time 5000.000   Reading frame      60 time 6000.000   Reading frame      70 time 7000.000   Reading frame      80 time 8000.000   Reading frame      90 time 9000.000   Reading frame     100 time 10000.000   Last frame        100 time 10000.000   
+Reading frame       0 time    0.000   Reading frame       1 time  100.000   Reading frame       2 time  200.000   Reading frame       3 time  300.000   Reading frame       4 time  400.000   Reading frame       5 time  500.000   Reading frame       6 time  600.000   Reading frame       7 time  700.000   Reading frame       8 time  800.000   Reading frame       9 time  900.000   Reading frame      10 time 1000.000   Reading frame      11 time 1100.000   Reading frame      12 time 1200.000   Reading frame      13 time 1300.000   Reading frame      14 time 1400.000   Reading frame      15 time 1500.000   Reading frame      16 time 1600.000   Reading frame      17 time 1700.000   Reading frame      18 time 1800.000   Reading frame      19 time 1900.000   Reading frame      20 time 2000.000   Reading frame      30 time 3000.000   Reading frame      40 time 4000.000   Reading frame      50 time 5000.000   Reading frame      60 time 6000.000   Reading frame      70 time 7000.000   Reading frame      80 time 8000.000   Reading frame      90 time 9000.000   Reading frame     100 time 10000.000   Last frame        100 time 10000.000   
+Reading frame       0 time    0.000   Reading frame       1 time  100.000   Reading frame       2 time  200.000   Reading frame       3 time  300.000   Reading frame       4 time  400.000   Reading frame       5 time  500.000   Reading frame       6 time  600.000   Reading frame       7 time  700.000   Reading frame       8 time  800.000   Reading frame       9 time  900.000   Reading frame      10 time 1000.000   Reading frame      11 time 1100.000   Reading frame      12 time 1200.000   Reading frame      13 time 1300.000   Reading frame      14 time 1400.000   Reading frame      15 time 1500.000   Reading frame      16 time 1600.000   Reading frame      17 time 1700.000   Reading frame      18 time 1800.000   Reading frame      19 time 1900.000   Reading frame      20 time 2000.000   Reading frame      30 time 3000.000   Reading frame      40 time 4000.000   Reading frame      50 time 5000.000   Reading frame      60 time 6000.000   Reading frame      70 time 7000.000   Reading frame      80 time 8000.000   Reading frame      90 time 9000.000   Reading frame     100 time 10000.000   Last frame        100 time 10000.000   
+Reading frame       0 time    0.000   Reading frame       1 time  100.000   Reading frame       2 time  200.000   Reading frame       3 time  300.000   Reading frame       4 time  400.000   Reading frame       5 time  500.000   Reading frame       6 time  600.000   Reading frame       7 time  700.000   Reading frame       8 time  800.000   Reading frame       9 time  900.000   Reading frame      10 time 1000.000   Reading frame      11 time 1100.000   Reading frame      12 time 1200.000   Reading frame      13 time 1300.000   Reading frame      14 time 1400.000   Reading frame      15 time 1500.000   Reading frame      16 time 1600.000   Reading frame      17 time 1700.000   Reading frame      18 time 1800.000   Reading frame      19 time 1900.000   Reading frame      20 time 2000.000   Reading frame      30 time 3000.000   Reading frame      40 time 4000.000   Reading frame      50 time 5000.000   Reading frame      60 time 6000.000   Reading frame      70 time 7000.000   Reading frame      80 time 8000.000   Reading frame      90 time 9000.000   Reading frame     100 time 10000.000   Last frame        100 time 10000.000   
+Reading frame       0 time    0.000   Reading frame       1 time  100.000   Reading frame       2 time  200.000   Reading frame       3 time  300.000   Reading frame       4 time  400.000   Reading frame       5 time  500.000   Reading frame       6 time  600.000   Reading frame       7 time  700.000   Reading frame       8 time  800.000   Reading frame       9 time  900.000   Reading frame      10 time 1000.000   Reading frame      11 time 1100.000   Reading frame      12 time 1200.000   Reading frame      13 time 1300.000   Reading frame      14 time 1400.000   Reading frame      15 time 1500.000   Reading frame      16 time 1600.000   Reading frame      17 time 1700.000   Reading frame      18 time 1800.000   Reading frame      19 time 1900.000   Reading frame      20 time 2000.000   Reading frame      30 time 3000.000   Reading frame      40 time 4000.000   Reading frame      50 time 5000.000   Reading frame      60 time 6000.000   Reading frame      70 time 7000.000   Reading frame      80 time 8000.000   Reading frame      90 time 9000.000   Reading frame     100 time 10000.000   Last frame        100 time 10000.000   
+Reading frame       0 time    0.000   Reading frame       1 time  100.000   Reading frame       2 time  200.000   Reading frame       3 time  300.000   Reading frame       4 time  400.000   Reading frame       5 time  500.000   Reading frame       6 time  600.000   Reading frame       7 time  700.000   Reading frame       8 time  800.000   Reading frame       9 time  900.000   Reading frame      10 time 1000.000   Reading frame      11 time 1100.000   Reading frame      12 time 1200.000   Reading frame      13 time 1300.000   Reading frame      14 time 1400.000   Reading frame      15 time 1500.000   Reading frame      16 time 1600.000   Reading frame      17 time 1700.000   Reading frame      18 time 1800.000   Reading frame      19 time 1900.000   Reading frame      20 time 2000.000   Reading frame      30 time 3000.000   Reading frame      40 time 4000.000   Reading frame      50 time 5000.000   Reading frame      60 time 6000.000   Reading frame      70 time 7000.000   Reading frame      80 time 8000.000   Reading frame      90 time 9000.000   Reading frame     100 time 10000.000   Last frame        100 time 10000.000   
+Reading frame       0 time    0.000   Reading frame       1 time  100.000   Reading frame       2 time  200.000   Reading frame       3 time  300.000   Reading frame       4 time  400.000   Reading frame       5 time  500.000   Reading frame       6 time  600.000   Reading frame       7 time  700.000   Reading frame       8 time  800.000   Reading frame       9 time  900.000   Reading frame      10 time 1000.000   Reading frame      11 time 1100.000   Reading frame      12 time 1200.000   Reading frame      13 time 1300.000   Reading frame      14 time 1400.000   Reading frame      15 time 1500.000   Reading frame      16 time 1600.000   Reading frame      17 time 1700.000   Reading frame      18 time 1800.000   Reading frame      19 time 1900.000   Reading frame      20 time 2000.000   Reading frame      30 time 3000.000   Reading frame      40 time 4000.000   Reading frame      50 time 5000.000   Reading frame      60 time 6000.000   Reading frame      70 time 7000.000   Reading frame      80 time 8000.000   Reading frame      90 time 9000.000   Reading frame     100 time 10000.000   Last frame        100 time 10000.000   
+Reading frame       0 time    0.000   Reading frame       1 time  100.000   Reading frame       2 time  200.000   Reading frame       3 time  300.000   Reading frame       4 time  400.000   Reading frame       5 time  500.000   Reading frame       6 time  600.000   Reading frame       7 time  700.000   Reading frame       8 time  800.000   Reading frame       9 time  900.000   Reading frame      10 time 1000.000   Reading frame      11 time 1100.000   Reading frame      12 time 1200.000   Reading frame      13 time 1300.000   Reading frame      14 time 1400.000   Reading frame      15 time 1500.000   Reading frame      16 time 1600.000   Reading frame      17 time 1700.000   Reading frame      18 time 1800.000   Reading frame      19 time 1900.000   Reading frame      20 time 2000.000   Reading frame      30 time 3000.000   Reading frame      40 time 4000.000   Reading frame      50 time 5000.000   Reading frame      60 time 6000.000   Reading frame      70 time 7000.000   Reading frame      80 time 8000.000   Reading frame      90 time 9000.000   Reading frame     100 time 10000.000   Last frame        100 time 10000.000   
+Reading frame       0 time    0.000   
+Continue writing frames from step5_9.trr t=0 ps, frame=0      
+ ->  frame      0 time    0.000 ps     Reading frame       1 time  100.000    ->  frame      1 time  100.000 ps     Reading frame       2 time  200.000    ->  frame      2 time  200.000 ps     Reading frame       3 time  300.000    ->  frame      3 time  300.000 ps     Reading frame       4 time  400.000    ->  frame      4 time  400.000 ps     Reading frame       5 time  500.000    ->  frame      5 time  500.000 ps     Reading frame       6 time  600.000    ->  frame      6 time  600.000 ps     Reading frame       7 time  700.000    ->  frame      7 time  700.000 ps     Reading frame       8 time  800.000    ->  frame      8 time  800.000 ps     Reading frame       9 time  900.000    ->  frame      9 time  900.000 ps     Reading frame      10 time 1000.000    ->  frame     10 time 1000.000 ps     Reading frame      11 time 1100.000    ->  frame     11 time 1100.000 ps     Reading frame      12 time 1200.000    ->  frame     12 time 1200.000 ps     Reading frame      13 time 1300.000    ->  frame     13 time 1300.000 ps     Reading frame      14 time 1400.000    ->  frame     14 time 1400.000 ps     Reading frame      15 time 1500.000    ->  frame     15 time 1500.000 ps     Reading frame      16 time 1600.000    ->  frame     16 time 1600.000 ps     Reading frame      17 time 1700.000    ->  frame     17 time 1700.000 ps     Reading frame      18 time 1800.000    ->  frame     18 time 1800.000 ps     Reading frame      19 time 1900.000    ->  frame     19 time 1900.000 ps     Reading frame      20 time 2000.000    ->  frame     20 time 2000.000 ps     Reading frame      30 time 3000.000    ->  frame     30 time 3000.000 ps     Reading frame      40 time 4000.000    ->  frame     40 time 4000.000 ps     Reading frame      50 time 5000.000    ->  frame     50 time 5000.000 ps     Reading frame      60 time 6000.000    ->  frame     60 time 6000.000 ps     Reading frame      70 time 7000.000    ->  frame     70 time 7000.000 ps     Reading frame      80 time 8000.000    ->  frame     80 time 8000.000 ps     Reading frame      90 time 9000.000    ->  frame     90 time 9000.000 ps     Reading frame     100 time 10000.000    ->  frame    100 time 10000.000 ps     Last frame        100 time 10000.000   
+
+Last frame written was 100, time 10000.000000 ps
+
+GROMACS reminds you: "We Look Pretty Sharp In These Clothes" (F. Zappa)
+
+Note that major changes are planned in future for trjcat, to improve usability and utility.
+lasttime 0
+
+lasttime 0
+
+lasttime 0
+
+lasttime 0
+
+lasttime 0
+
+lasttime 0
+
+lasttime 0
+
+lasttime 0
+
+lasttime 0
+                      :-) GROMACS - gmx trjcat, 2023.3 (-:
+
+Executable:   /ext3/apps/gromacs/2023.3/openmpi/intel/bin/gmx_mpi
+Data prefix:  /ext3/apps/gromacs/2023.3/openmpi/intel
+Working dir:  /home/hv454/comp-lab-class-2023/Week4/Setup/2jof_amber/gromacs
+Command line:
+  gmx_mpi trjcat -f step5_1.gro step5_2.gro step5_3.gro step5_4.gro step5_5.gro step5_6.gro step5_7.gro step5_8.gro step5_9.gro -o combined.gro
+
+
+-------------------------------------------------------
+Program:     gmx trjcat, version 2023.3
+Source file: src/gromacs/tools/trjcat.cpp (line 583)
+
+Fatal error:
+gmx trjcat can only handle binary trajectory formats (trr, xtc, tng)
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+Note that major changes are planned in future for trjcat, to improve usability and utility.--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------

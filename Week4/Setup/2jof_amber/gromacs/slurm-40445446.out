@@ -1,0 +1,60 @@
+Lmod has detected the following error: Your site prevents the automatic
+swapping of modules with same name. You must explicitly unload the loaded
+version of "gromacs/openmpi/intel/2023.3" before you can load the new one. Use
+swap to do this:
+
+   $ module swap gromacs/openmpi/intel/2023.3 gromacs/openmpi/intel/2020.4
+
+Alternatively, you can set the environment variable
+LMOD_DISABLE_SAME_NAME_AUTOSWAP to "no" to re-enable same name autoswapping.
+
+
+
+                     :-) GROMACS - gmx trjconv, 2023.3 (-:
+
+Executable:   /ext3/apps/gromacs/2023.3/openmpi/intel/bin/gmx_mpi
+Data prefix:  /ext3/apps/gromacs/2023.3/openmpi/intel
+Working dir:  /home/hv454/comp-lab-class-2023/Week4/Setup/2jof_amber/gromacs
+Command line:
+  gmx_mpi trjconv -f combined.xtc -s step4.1_equilibration.tpr -o md_center.xtc
+
+Will write xtc: Compressed trajectory (portable xdr format): xtc
+Reading file step4.1_equilibration.tpr, VERSION 2020.4 (single precision)
+Reading file step4.1_equilibration.tpr, VERSION 2020.4 (single precision)
+Group     0 (         System) has  9120 elements
+Group     1 (        Protein) has   284 elements
+Group     2 (      Protein-H) has   148 elements
+Group     3 (        C-alpha) has    20 elements
+Group     4 (       Backbone) has    60 elements
+Group     5 (      MainChain) has    81 elements
+Group     6 (   MainChain+Cb) has    98 elements
+Group     7 (    MainChain+H) has    99 elements
+Group     8 (      SideChain) has   185 elements
+Group     9 (    SideChain-H) has    67 elements
+Group    10 (    Prot-Masses) has   284 elements
+Group    11 (    non-Protein) has  8836 elements
+Group    12 (          Other) has  8836 elements
+Group    13 (             K+) has     6 elements
+Group    14 (            Cl-) has     6 elements
+Group    15 (            OPC) has  8824 elements
+Select a group: 
+-------------------------------------------------------
+Program:     gmx trjconv, version 2023.3
+Source file: src/gromacs/topology/index.cpp (line 859)
+
+Fatal error:
+Cannot read from input
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
+Note that major changes are planned in future for trjconv, to improve usability and utility.
+Select group for output
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
