@@ -61108,3 +61108,5 @@ Total time:
     H            0.990664300781    -2.239099343821    -0.704104222723
     H            1.440809197090    -2.155165303890     0.972527531340
 
+	Removing binary optimization data file.
+	Cleaning optimization helper files.
