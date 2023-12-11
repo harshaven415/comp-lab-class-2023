@@ -29,7 +29,8 @@ of the License, or (at your option) any later version.
 GROMACS:      gmx mdrun, version 2019.6
 Executable:   /scratch/work/courses/CHEM-GA-2671-2022fa/software/gromacs-2019.6-plumedSept2020/bin/gmx_mpi
 Data prefix:  /scratch/work/courses/CHEM-GA-2671-2022fa/software/gromacs-2019.6-plumedSept2020
-Working dir:  /scratch/work/courses/CHEM-GA-2671-2022fa/dk4128/class_6/Week6/sim_A
+Working dir:  /scratch/work/courses/CHEM-GA-2671-2022fa/hv454//Week6/sim_A
+
 Process ID:   3718812
 Command line:
   gmx_mpi mdrun -s ../Inputs/topolA.tpr -nsteps 5000000 -plumed metadynamics.dat
